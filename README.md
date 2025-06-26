@@ -105,49 +105,49 @@ pytest
 
 ## Test Results
 
-O projeto possui uma suíte de testes abrangente com **22 testes passando** e **54% de cobertura de código**.
+The project has a comprehensive test suite with **22 passing tests** and **54% code coverage**.
 
-### Tipos de Testes
+### Test Types
 
-- **Testes Básicos** (`test_basic.py`): Verificam importação e versão do pacote
-- **Testes Core** (`test_core.py`): Testam componentes principais como Agent, Task e GoogleSearchTool
-- **Testes de API** (`test_mangaba_api.py`): Validam funcionalidades assíncronas do Agent e MCP
-- **Testes de Integração** (`test_integration.py`): Cenários completos de uso incluindo:
-  - Processamento de mensagens por agentes
-  - Análise de conversas pelo MCP
-  - Processamento com múltiplos agentes
-  - Tratamento de conversas vazias e grandes
-  - Criação de mensagens com metadados
-- **Testes de Performance** (`test_performance_extended.py`): Benchmarks de desempenho:
-  - Velocidade de processamento (100 mensagens)
-  - Análise de conversas (50 mensagens)
-  - Processamento concorrente (5 agentes)
-  - Estabilidade de memória
-  - Escalabilidade com conversas grandes
-  - Velocidade de inicialização de agentes
-- **Testes de API Slack** (`test_slack_api.py`): Validação de integração com Slack (mockado)
+- **Basic Tests** (`test_basic.py`): Verify package import and version
+- **Core Tests** (`test_core.py`): Test main components like Agent, Task, and GoogleSearchTool
+- **API Tests** (`test_mangaba_api.py`): Validate asynchronous Agent and MCP functionalities
+- **Integration Tests** (`test_integration.py`): Complete usage scenarios including:
+  - Message processing by agents
+  - Conversation analysis by MCP
+  - Multi-agent processing
+  - Empty and large conversation handling
+  - Message creation with metadata
+- **Performance Tests** (`test_performance_extended.py`): Performance benchmarks:
+  - Processing speed (100 messages)
+  - Conversation analysis (50 messages)
+  - Concurrent processing (5 agents)
+  - Memory stability
+  - Scalability with large conversations
+  - Agent initialization speed
+- **Slack API Tests** (`test_slack_api.py`): Slack integration validation (mocked)
 
-### Executar Testes
+### Running Tests
 
 ```bash
-# Executar todos os testes
+# Run all tests
 pytest tests/ -v
 
-# Executar testes específicos
+# Run specific tests
 pytest tests/test_integration.py -v
 pytest tests/test_performance_extended.py -v
 
-# Executar com cobertura
+# Run with coverage
 pytest tests/ --cov=src/mangaba_ai --cov-report=html
 ```
 
-### Métricas de Performance
+### Performance Metrics
 
-- **Processamento**: >20 mensagens/segundo
-- **Análise MCP**: <3 segundos para 50 mensagens
-- **Throughput Concorrente**: >10 mensagens/segundo
-- **Inicialização**: >100 agentes/segundo
-- **Uso de Memória**: <50MB de aumento durante processamento intenso
+- **Processing**: >20 messages/second
+- **MCP Analysis**: <3 seconds for 50 messages
+- **Concurrent Throughput**: >10 messages/second
+- **Initialization**: >100 agents/second
+- **Memory Usage**: <50MB increase during intensive processing
 
 ## Contributing
 

@@ -1,0 +1,70 @@
+{
+    "application": {
+        "name": "Busca de Ebooks",
+        "version": "1.0.0",
+        "description": "Aplicação para busca de ebooks em diversas fontes online"
+    },
+    "agent": {
+        "name": "Ebook Search Agent",
+        "max_results_per_source": 5,
+        "timeout": 30,
+        "retry_attempts": 2
+    },
+    "sources": [
+        {
+            "name": "Library Genesis",
+            "url": "https://libgen.is/search.php?req={query}",
+            "enabled": true,
+            "priority": 1
+        },
+        {
+            "name": "Z-Library",
+            "url": "https://b-ok.lat/s/{query}",
+            "enabled": true,
+            "priority": 2
+        },
+        {
+            "name": "Internet Archive",
+            "url": "https://archive.org/search.php?query={query}",
+            "enabled": true,
+            "priority": 3
+        },
+        {
+            "name": "PDF Drive",
+            "url": "https://www.pdfdrive.com/search?q={query}",
+            "enabled": true,
+            "priority": 4
+        },
+        {
+            "name": "Project Gutenberg",
+            "url": "https://www.gutenberg.org/ebooks/search/?query={query}",
+            "enabled": true,
+            "priority": 5
+        },
+        {
+            "name": "Open Library",
+            "url": "https://openlibrary.org/search?q={query}",
+            "enabled": false,
+            "priority": 6
+        }
+    ],
+    "output": {
+        "save_results": true,
+        "results_directory": "./resultados",
+        "max_results_display": 20,
+        "format": "text"
+    },
+    "filters": {
+        "formats": ["PDF", "EPUB", "MOBI", "AZW3", "TXT"],
+        "max_size_mb": 100,
+        "languages": ["pt-BR", "en", "es"],
+        "min_seeders": 1
+    },
+    "proxy": {
+        "enabled": false,
+        "address": "",
+        "port": 0,
+        "username": "",
+        "password": ""
+    }
+}

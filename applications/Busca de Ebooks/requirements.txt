@@ -1,0 +1,20 @@
+# Dependências específicas para a aplicação de Busca de Ebooks
+
+# Dependências principais do Mangaba.AI
+google-generativeai>=0.3.0
+python-dotenv>=1.0.0
+aiohttp>=3.9.0
+pydantic>=2.5.0
+typing-extensions>=4.8.0
+
+# Dependências específicas para busca de ebooks
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+asyncio>=3.4.3
+
+# Dependências opcionais para funcionalidades avançadas
+pyppeteer>=1.0.0  # Para sites que requerem JavaScript
+fake-useragent>=1.1.0  # Para rotação de user-agents
+python-slugify>=8.0.0  # Para normalização de nomes de arquivos
+tqdm>=4.65.0  # Para barras de progresso

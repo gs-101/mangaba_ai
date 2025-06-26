@@ -103,6 +103,52 @@ pre-commit install
 pytest
 ```
 
+## Test Results
+
+O projeto possui uma suíte de testes abrangente com **22 testes passando** e **54% de cobertura de código**.
+
+### Tipos de Testes
+
+- **Testes Básicos** (`test_basic.py`): Verificam importação e versão do pacote
+- **Testes Core** (`test_core.py`): Testam componentes principais como Agent, Task e GoogleSearchTool
+- **Testes de API** (`test_mangaba_api.py`): Validam funcionalidades assíncronas do Agent e MCP
+- **Testes de Integração** (`test_integration.py`): Cenários completos de uso incluindo:
+  - Processamento de mensagens por agentes
+  - Análise de conversas pelo MCP
+  - Processamento com múltiplos agentes
+  - Tratamento de conversas vazias e grandes
+  - Criação de mensagens com metadados
+- **Testes de Performance** (`test_performance_extended.py`): Benchmarks de desempenho:
+  - Velocidade de processamento (100 mensagens)
+  - Análise de conversas (50 mensagens)
+  - Processamento concorrente (5 agentes)
+  - Estabilidade de memória
+  - Escalabilidade com conversas grandes
+  - Velocidade de inicialização de agentes
+- **Testes de API Slack** (`test_slack_api.py`): Validação de integração com Slack (mockado)
+
+### Executar Testes
+
+```bash
+# Executar todos os testes
+pytest tests/ -v
+
+# Executar testes específicos
+pytest tests/test_integration.py -v
+pytest tests/test_performance_extended.py -v
+
+# Executar com cobertura
+pytest tests/ --cov=src/mangaba_ai --cov-report=html
+```
+
+### Métricas de Performance
+
+- **Processamento**: >20 mensagens/segundo
+- **Análise MCP**: <3 segundos para 50 mensagens
+- **Throughput Concorrente**: >10 mensagens/segundo
+- **Inicialização**: >100 agentes/segundo
+- **Uso de Memória**: <50MB de aumento durante processamento intenso
+
 ## Contributing
 
 1. Fork the project
@@ -114,3 +160,4 @@ pytest
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+

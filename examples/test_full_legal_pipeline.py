@@ -9,11 +9,14 @@ Requisitos:
 - Variável de ambiente ``GEMINI_API_KEY`` definida (``.env``).
 - Biblioteca ``mangaba_ai`` instalada.
 """
+
 import asyncio
 import logging
 import os
 from datetime import datetime
+
 from dotenv import load_dotenv
+
 from mangaba_ai import MangabaAI
 
 # Configuração de logging
@@ -30,6 +33,7 @@ if not auth_loaded:
 
 # Nome do arquivo de saída (pode ser alterado conforme necessidade)
 OUTPUT_FILENAME = "peticao_automatica.txt"
+
 
 async def test_full_legal_pipeline() -> None:
     """Executa o pipeline com registro de toda a jornada e salva resultado em TXT."""
@@ -129,6 +133,7 @@ async def test_full_legal_pipeline() -> None:
         logger.error("Erro durante o pipeline jurídico: %s", exc)
         raise
 
+
 async def main() -> None:
     """Executa o pipeline jurídico completo se a GEMINI_API_KEY estiver configurada."""
     if not os.getenv("GEMINI_API_KEY"):
@@ -137,6 +142,7 @@ async def main() -> None:
         return
 
     await test_full_legal_pipeline()
+
 
 if __name__ == "__main__":
     asyncio.run(main())

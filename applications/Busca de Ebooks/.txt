@@ -1,0 +1,1 @@
+Este diretório contém a aplicação de Busca de Ebooks desenvolvida com o framework Mangaba.AI.

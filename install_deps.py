@@ -11,18 +11,19 @@ estejam instaladas corretamente.
 import subprocess
 import sys
 
+
 def instalar_dependencias():
     """Instala todas as dependências necessárias."""
     print("Instalando dependências do Mangaba...")
-    
+
     dependencias = [
         "google-generativeai>=0.8.3",
         "googlesearch-python>=1.2.1",
         "requests>=2.32.3",
         "aiohttp>=3.10.5",
-        "tenacity>=8.5.0"
+        "tenacity>=8.5.0",
     ]
-    
+
     for dep in dependencias:
         print(f"Instalando {dep}...")
         try:
@@ -31,9 +32,10 @@ def instalar_dependencias():
         except subprocess.CalledProcessError:
             print(f"✗ Falha ao instalar {dep}")
             return False
-    
+
     print("\nTodas as dependências foram instaladas com sucesso!")
     return True
 
+
 if __name__ == "__main__":
-    instalar_dependencias() 
+    instalar_dependencias()

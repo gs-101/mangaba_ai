@@ -2,21 +2,24 @@
 Caso avançado de uso do Mangaba.AI com múltiplos agentes e colaboração.
 Este exemplo mostra dois agentes com papéis distintos gerando uma minuta de petição baseada em um resumo de caso.
 """
+
 import asyncio
 import logging
 import os
+
 from dotenv import load_dotenv
+
 from mangaba_ai import MangabaAI
 
 # Configuração de logging
 logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
 logger = logging.getLogger(__name__)
 
 # Carrega variáveis de ambiente
 load_dotenv()
+
 
 async def test_advanced_case():
     """Executa um caso avançado com dois agentes cooperando na elaboração de uma petição."""
@@ -28,13 +31,13 @@ async def test_advanced_case():
         analista = ai.create_agent(
             name="analista_juridico",
             role="Analista Jurídico",
-            goal="Analisar o caso e identificar os principais argumentos jurídicos"
+            goal="Analisar o caso e identificar os principais argumentos jurídicos",
         )
 
         redator = ai.create_agent(
             name="redator_peticao",
             role="Redator de Petições",
-            goal="Redigir a petição de forma clara e técnica com base nos argumentos fornecidos"
+            goal="Redigir a petição de forma clara e técnica com base nos argumentos fornecidos",
         )
 
         # Tarefa para o analista: interpretar um resumo do caso
@@ -46,8 +49,8 @@ async def test_advanced_case():
                     "Cliente foi cobrado indevidamente por serviço não contratado em sua fatura de telefone. "
                     "Tentou resolver administrativamente sem sucesso. Busca reembolso e danos morais."
                 ),
-                "jurisprudencia_relevante": True
-            }
+                "jurisprudencia_relevante": True,
+            },
         )
 
         # Executa a análise jurídica
@@ -60,9 +63,15 @@ async def test_advanced_case():
             agent=redator,
             context={
                 "argumentos_juridicos": argumentos,
-                "estrutura_peticao": ["Preâmbulo", "Fatos", "Fundamentos Jurídicos", "Pedidos", "Fecho"],
-                "tipo_peticao": "Ação de Indenização por Danos Morais e Materiais"
-            }
+                "estrutura_peticao": [
+                    "Preâmbulo",
+                    "Fatos",
+                    "Fundamentos Jurídicos",
+                    "Pedidos",
+                    "Fecho",
+                ],
+                "tipo_peticao": "Ação de Indenização por Danos Morais e Materiais",
+            },
         )
 
         # Executa a redação da petição
@@ -80,6 +89,7 @@ async def test_advanced_case():
         logger.error(f"Erro durante o teste avançado: {e}")
         raise
 
+
 async def main():
     """Função principal para execução do caso avançado."""
     try:
@@ -93,6 +103,7 @@ async def main():
     except Exception as e:
         logger.error(f"Erro na execução principal: {e}")
         raise
+
 
 if __name__ == "__main__":
     asyncio.run(main())

@@ -1,0 +1,78 @@
+{
+  "query": "ia",
+  "busca": {
+    "query": "ia",
+    "results": [
+      {
+        "titulo": "Licitação de ia - Nacional",
+        "orgao": "Ministério de Educação",
+        "modalidade": "Concorrência",
+        "valor_estimado": "R$ 543699.00",
+        "data_abertura": "14/07/2025",
+        "objeto": "Contratação de serviços de ia para implementação de soluções de inteligência artificial",
+        "url": "https://www.gov.br/compras/pt-br/acesso-a-informacao/consulta-detalhada?q=ia&id=701",
+        "fonte": "www.gov.br"
+      },
+      {
+        "titulo": "Licitação de ia - Nacional",
+        "orgao": "Ministério de Educação",
+        "modalidade": "Concorrência",
+        "valor_estimado": "R$ 598610.00",
+        "data_abertura": "30/06/2025",
+        "objeto": "Contratação de serviços de ia para implementação de soluções de inteligência artificial",
+        "url": "https://www.licitacoes-e.com.br?q=ia&id=7",
+        "fonte": "www.licitacoes-e.com.br"
+      },
+      {
+        "titulo": "Licitação de ia - Nacional",
+        "orgao": "Ministério de Educação",
+        "modalidade": "Concorrência",
+        "valor_estimado": "R$ 557386.00",
+        "data_abertura": "08/08/2025",
+        "objeto": "Contratação de serviços de ia para implementação de soluções de inteligência artificial",
+        "url": "https://comprasnet.gov.br/ConsultaLicitacoes/ConsLicitacoes_Lista.asp?q=ia&id=386",
+        "fonte": "comprasnet.gov.br"
+      },
+      {
+        "titulo": "Licitação de ia - Estadual",
+        "orgao": "Secretaria de Ciência e Tecnologia",
+        "modalidade": "Pregão Eletrônico",
+        "valor_estimado": "R$ 1057386.00",
+        "data_abertura": "08/08/2025",
+        "objeto": "Contratação de serviços de ia para desenvolvimento de soluções de inteligência artificial",
+        "url": "https://comprasnet.gov.br/ConsultaLicitacoes/ConsLicitacoes_Lista.asp?q=ia&id=386",
+        "fonte": "comprasnet.gov.br"
+      },
+      {
+        "titulo": "Licitação de ia - Nacional",
+        "orgao": "Ministério de Educação",
+        "modalidade": "Concorrência",
+        "valor_estimado": "R$ 523477.00",
+        "data_abertura": "02/08/2025",
+        "objeto": "Contratação de serviços de ia para implementação de soluções de inteligência artificial",
+        "url": "https://www.comprasgovernamentais.gov.br/index.php/comprasnet-siasg?q=ia&id=500",
+        "fonte": "www.comprasgovernamentais.gov.br"
+      },
+      {
+        "titulo": "Licitação de ia - Estadual",
+        "orgao": "Secretaria de Ciência e Tecnologia",
+        "modalidade": "Pregão Eletrônico",
+        "valor_estimado": "R$ 1023477.00",
+        "data_abertura": "02/08/2025",
+        "objeto": "Contratação de serviços de ia para desenvolvimento de soluções de inteligência artificial",
+        "url": "https://www.comprasgovernamentais.gov.br/index.php/comprasnet-siasg?q=ia&id=500",
+        "fonte": "www.comprasgovernamentais.gov.br"
+      },
+      {
+        "titulo": "Licitação de ia - Nacional",
+        "orgao": "Ministério de Educação",
+        "modalidade": "Concorrência",
+        "valor_estimado": "R$ 589900.00",
+        "data_abertura": "30/06/2025",
+        "objeto": "Contratação de serviços de ia para implementação de soluções de inteligência artificial",
+        "url": "https://www.portaldecompraspublicas.com.br/18/?q=ia&id=567",
+        "fonte": "www.portaldecompraspublicas.com.br"
+      }
+    ],
+    "count": 7,
+    "timestamp": 

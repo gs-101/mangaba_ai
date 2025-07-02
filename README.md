@@ -1,5 +1,11 @@
 # 🥭 Mangaba AI
 
+[![PyPI version](https://img.shields.io/pypi/v/mangaba-ai.svg)](https://pypi.org/project/mangaba-ai/)
+[![Python](https://img.shields.io/pypi/pyversions/mangaba-ai.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/usuario/mangaba-ai/actions)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome brightnessgreen.svg)](https://github.com/usuario/mangaba-ai/blob/main/CONTRIBUTING.md)
+
 Repositório minimalista para criação de agentes de IA inteligentes e versáteis com protocolos **A2A** (Agent-to-Agent) e **MCP** (Model Context Protocol).
 
 ## ✨ Características Principais

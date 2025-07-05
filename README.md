@@ -1,7 +1,7 @@
 # 🥭 Mangaba AI
 
-[![PyPI version](https://img.shields.io/pypi/v/mangaba-ai.svg)](https://pypi.org/project/mangaba-ai/)
-[![Python](https://img.shields.io/pypi/pyversions/mangaba-ai.svg)](https://www.python.org/)
+[![PyPI version](https://img.shields.io/pypi/v/mangaba.svg)](https://pypi.org/project/mangaba/)
+[![Python](https://img.shields.io/pypi/pyversions/mangaba.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/usuario/mangaba-ai/actions)
 

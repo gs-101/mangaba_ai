@@ -7,6 +7,8 @@
 
 Repositório minimalista para criação de agentes de IA inteligentes e versáteis com protocolos **A2A** (Agent-to-Agent) e **MCP** (Model Context Protocol).
 
+> 📋 **[ÍNDICE COMPLETO](INDICE.md)** - Navegação rápida por todo o repositório
+
 ## ✨ Características Principais
 
 - 🤖 **Agente de IA Versátil**: Suporte a qualquer provedor de IA
@@ -17,21 +19,63 @@ Repositório minimalista para criação de agentes de IA inteligentes e versáte
 
 ## 🚀 Instalação Rápida
 
+### Opção 1: Configuração Automática (Recomendado)
+
 ```bash
+# Configuração completa em um comando
+python quick_setup.py
+```
+
+### Opção 2: Configuração Manual
+
+```bash
+# 1. Instalar dependências
 pip install -r requirements.txt
+
+# 2. Configurar ambiente
+copy .env.template .env
+# Edite o arquivo .env com suas configurações
+
+# 3. Validar instalação
+python validate_env.py
 ```
 
-## ⚙️ Configuração (Apenas 2 passos!)
+## ⚙️ Configuração
 
-1. Copie o arquivo de exemplo:
+### 🔧 Configuração Automática
+
+O script `quick_setup.py` automatiza todo o processo:
+- ✅ Cria ambiente virtual
+- ✅ Instala dependências
+- ✅ Configura arquivo .env
+- ✅ Valida instalação
+
+### 🛠️ Configuração Manual
+
+1. **Configure o arquivo .env** (copie de `.env.template`):
+```env
+# Obrigatório
+GOOGLE_API_KEY=sua_chave_google_api_aqui
+
+# Opcional (com valores padrão)
+MODEL_NAME=gemini-pro
+AGENT_NAME=MangabaAgent
+LOG_LEVEL=INFO
+```
+
+2. **Obtenha sua Google API Key**:
+   - Acesse: https://makersuite.google.com/app/apikey
+   - Crie uma nova chave
+   - Cole no arquivo .env
+
+### 🔍 Validação do Ambiente
+
 ```bash
-copy .env.example .env
-```
+# Verifica se tudo está configurado corretamente
+python validate_env.py
 
-2. Configure sua chave de API no arquivo `.env`:
-```
-API_KEY=sua_chave_api_aqui
-MODEL=modelo_desejado
+# Salva relatório detalhado
+python validate_env.py --save-report
 ```
 
 ## 📖 Uso Super Simples
@@ -276,27 +320,81 @@ MODEL=modelo-avancado     # Modelo mais avançado
 MODEL=modelo-multimodal   # Para diferentes tipos de entrada
 ```
 
+## 🚀 Scripts Disponíveis
+
+> 🔧 **Todos os scripts estão organizados na pasta [scripts/](scripts/)**
+
+- [`validate_env.py`](scripts/validate_env.py) - Valida configuração do ambiente
+- [`quick_setup.py`](scripts/quick_setup.py) - Configuração rápida automatizada
+- [`example_env_usage.py`](scripts/example_env_usage.py) - Exemplo de uso das configurações
+- [`exemplo_curso_basico.py`](scripts/exemplo_curso_basico.py) - Exemplos práticos do curso básico
+- [`setup_env.py`](scripts/setup_env.py) - Configuração manual detalhada
+
 ## 📁 Estrutura do Projeto
 
 ```
 mangaba_ai/
-├── README.md              # Este arquivo
-├── requirements.txt       # Dependências
-├── .env.example          # Exemplo de configuração
-├── config.py             # Configuração automática
-├── mangaba_agent.py      # Classe principal do agente
-├── examples/             # Exemplos de uso
-│   └── basic_example.py  # Exemplo básico completo
-└── utils/                # Utilitários
-    ├── __init__.py
-    └── logger.py         # Sistema de logs
+├── 📁 docs/                    # 📚 Documentação
+│   ├── CURSO_BASICO.md         # Curso básico completo
+│   ├── SETUP.md                # Guia de configuração
+│   ├── PROTOCOLS.md            # Documentação dos protocolos
+│   ├── CHANGELOG.md            # Histórico de mudanças
+│   ├── SCRIPTS.md              # Documentação dos scripts
+│   └── README.md               # Índice da documentação
+├── 📁 scripts/                 # 🔧 Scripts de configuração
+│   ├── validate_env.py         # Validação do ambiente
+│   ├── quick_setup.py          # Setup rápido automatizado
+│   ├── example_env_usage.py    # Exemplo de uso
+│   ├── exemplo_curso_basico.py # Exemplos do curso
+│   ├── setup_env.py            # Setup manual detalhado
+│   └── README.md               # Documentação dos scripts
+├── 📁 protocols/               # 🌐 Protocolos de comunicação
+│   ├── mcp_protocol.py         # Model Context Protocol
+│   └── a2a_protocol.py         # Agent-to-Agent Protocol
+├── 📁 examples/                # 📖 Exemplos de uso
+│   └── basic_example.py        # Exemplo básico completo
+├── 📁 utils/                   # 🛠️ Utilitários
+│   ├── __init__.py
+│   └── logger.py               # Sistema de logs
+├── mangaba_agent.py            # 🤖 Agente principal
+├── config.py                   # ⚙️ Configurações do sistema
+├── ESTRUTURA.md                # 📁 Organização do repositório
+├── .env.example                # 🔐 Exemplo de configuração
+├── requirements.txt            # 📦 Dependências Python
+└── README.md                   # 📖 Este arquivo
 ```
+
+> 📋 **Para detalhes completos da estrutura, consulte [ESTRUTURA.md](ESTRUTURA.md)**
 
 ## 🧪 Testar Rapidamente
 
 ```bash
+# 1. Configuração rápida
+python scripts/quick_setup.py
+
+# 2. Validar ambiente
+python scripts/validate_env.py
+
+# 3. Testar exemplo
+python scripts/example_env_usage.py
+
+# 4. Exemplos do curso básico
+python scripts/exemplo_curso_basico.py
+
+# 5. Exemplo interativo
 python examples/basic_example.py
 ```
+
+## 📚 Documentação
+
+- [🎓 CURSO_BASICO.md](docs/CURSO_BASICO.md) - **Curso básico completo para iniciantes**
+- [🔧 SETUP.md](docs/SETUP.md) - Guia completo de configuração
+- [🌐 PROTOCOLS.md](docs/PROTOCOLS.md) - Documentação dos protocolos MCP e A2A
+- [📝 CHANGELOG.md](docs/CHANGELOG.md) - Histórico de mudanças
+- [🚀 SCRIPTS.md](docs/SCRIPTS.md) - Documentação dos scripts de configuração
+- [📁 ESTRUTURA.md](ESTRUTURA.md) - Organização do repositório
+
+> 📖 **Toda a documentação está organizada na pasta [docs/](docs/)**
 
 ## 🤝 Contribuição
 

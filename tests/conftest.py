@@ -24,7 +24,7 @@ def test_config():
     """Configuração global para testes"""
     return {
         "api_key": "test_api_key_12345",
-        "model_name": "gemini-pro",
+        "model_name": "gemini-2.5-flash",
         "max_contexts": 50,
         "test_timeout": 30,
         "mock_responses": True

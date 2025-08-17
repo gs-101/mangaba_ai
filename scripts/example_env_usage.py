@@ -37,7 +37,7 @@ def load_environment_config() -> Dict[str, Any]:
     # Configurações opcionais com valores padrão
     optional_config = {
         # Configurações do modelo
-        'model_name': os.getenv('MODEL_NAME', 'gemini-pro'),
+        'model_name': os.getenv('MODEL_NAME', 'gemini-2.5-flash'),
         'model_temperature': float(os.getenv('MODEL_TEMPERATURE', '0.7')),
         'model_max_tokens': int(os.getenv('MODEL_MAX_TOKENS', '2048')),
         
@@ -290,8 +290,8 @@ def save_config_template():
             "MODEL_NAME": {
                 "description": "Nome do modelo a ser usado",
                 "type": "string",
-                "default": "gemini-pro",
-                "options": ["gemini-pro", "gemini-pro-vision"]
+                "default": "gemini-2.5-flash",
+                "options": ["gemini-2.5-flash", "gemini-pro-vision"]
             },
             "MODEL_TEMPERATURE": {
                 "description": "Temperatura do modelo (criatividade)",

@@ -162,7 +162,7 @@ def exemplo_4_configuracoes():
         # Mostrar variáveis de ambiente relevantes
         env_vars = {
             'GOOGLE_API_KEY': 'Configurada' if os.getenv('GOOGLE_API_KEY') else 'Não configurada',
-            'MODEL_NAME': os.getenv('MODEL_NAME', 'Padrão (gemini-pro)'),
+            'MODEL_NAME': os.getenv('MODEL_NAME', 'Padrão (gemini-2.5-flash)'),
             'LOG_LEVEL': os.getenv('LOG_LEVEL', 'Padrão (INFO)'),
             'USE_MCP': os.getenv('USE_MCP', 'Padrão (true)'),
             'USE_A2A': os.getenv('USE_A2A', 'Padrão (true)')

@@ -73,7 +73,7 @@ Pressione Ctrl+C a qualquer momento para cancelar.
 Pressione Enter para usar valores padrão.
 
 🔑 Google API Key (obrigatório): AIza...
-🤖 Nome do modelo [gemini-pro]: 
+🤖 Nome do modelo [gemini-2.5-flash]: 
 👤 Nome do agente [MangabaAgent]: 
 📊 Nível de log [INFO]: 
 

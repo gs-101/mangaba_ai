@@ -182,7 +182,7 @@ class EnvironmentValidator:
         
         # Variáveis opcionais com valores padrão
         optional_vars = {
-            'MODEL_NAME': 'gemini-pro',
+            'MODEL_NAME': 'gemini-2.5-flash',
             'AGENT_NAME': 'MangabaAgent',
             'USE_MCP': 'true',
             'USE_A2A': 'true',

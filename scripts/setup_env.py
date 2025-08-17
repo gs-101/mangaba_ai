@@ -132,7 +132,7 @@ class EnvironmentSetup:
             # Cria .env básico
             basic_env = """# Configuração básica do Mangaba AI
 GOOGLE_API_KEY=your_google_api_key_here
-MODEL_NAME=gemini-pro
+MODEL_NAME=gemini-2.5-flash
 AGENT_NAME=MangabaAgent
 USE_MCP=true
 USE_A2A=true

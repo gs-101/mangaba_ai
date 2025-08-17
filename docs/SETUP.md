@@ -83,7 +83,7 @@ python examples/basic_example.py
 
 | Variável | Padrão | Descrição |
 |----------|--------|----------|
-| `MODEL_NAME` | `gemini-pro` | Modelo do Google a ser usado |
+| `MODEL_NAME` | `gemini-2.5-flash` | Modelo do Google a ser usado |
 | `AGENT_NAME` | `MangabaAgent` | Nome padrão do agente |
 | `USE_MCP` | `true` | Habilitar protocolo MCP |
 | `USE_A2A` | `true` | Habilitar protocolo A2A |

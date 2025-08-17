@@ -12,9 +12,9 @@
     "MODEL_NAME": {
       "description": "Nome do modelo a ser usado",
       "type": "string",
-      "default": "gemini-pro",
+      "default": "gemini-2.5-flash",
       "options": [
-        "gemini-pro",
+        "gemini-2.5-flash",
         "gemini-pro-vision"
       ]
     },

@@ -203,10 +203,15 @@ class MangabaAgent(A2AAgent):
             return "Contexto MCP não está habilitado"
         
         try:
-            session = self.mcp.get_session(self.current_session_id)
+            # Fix: Substituindo get_session pelo método correto para obter sessão
+            session = self.mcp.sessions.get(self.current_session_id)
             if not session:
                 return "Nenhuma sessão ativa encontrada"
             
+            # Fix: Verificando se método get_session_contexts existe antes de chamar
+            if not hasattr(self.mcp, 'get_session_contexts'):
+                return "Erro: Método get_session_contexts não existe no protocolo MCP atual"
+                
             contexts = self.mcp.get_session_contexts(self.current_session_id)
             if not contexts:
                 return "Nenhum contexto encontrado na sessão atual"
@@ -250,12 +255,14 @@ class MangabaAgent(A2AAgent):
             if params is None:
                 params = {}
             
+            # Fix: Corrigindo uso de create_request com argumentos obrigatórios corretos
+            if not hasattr(self.a2a_protocol, 'create_request'):
+                return "Erro: Método create_request não existe no protocolo A2A atual"
+                
             request = self.a2a_protocol.create_request(
                 target_agent_id,
-                {
-                    "action": action,
-                    "params": params
-                }
+                action,
+                params
             )
             
             self.a2a_protocol.send_message(request)
@@ -273,18 +280,22 @@ class MangabaAgent(A2AAgent):
             if tags is None:
                 tags = ["general"]
             
-            broadcast = self.a2a_protocol.create_broadcast(
+            # Fix: Substituindo create_broadcast pelo método correto broadcast
+            if not hasattr(self.a2a_protocol, 'broadcast'):
+                return "Erro: Método broadcast não existe no protocolo A2A atual"
+                
+            self.a2a_protocol.broadcast(
                 {
                     "message": message,
                     "tags": tags,
                     "sender_info": {
                         "agent_id": self.agent_id,
-                        "timestamp": MCPContext.create.__defaults__[0]
+                        "timestamp": datetime.now().isoformat()
                     }
                 }
             )
             
-            self.a2a_protocol.send_message(broadcast)
+            # O método broadcast já envia a mensagem automaticamente
             self.logger.info(f"📢 Broadcast enviado: {message[:50]}...")
             
             return f"Broadcast enviado com sucesso"

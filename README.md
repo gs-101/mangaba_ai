@@ -60,7 +60,7 @@ O script `quick_setup.py` automatiza todo o processo:
 GOOGLE_API_KEY=sua_chave_google_api_aqui
 
 # Opcional (com valores padrão)
-MODEL_NAME=gemini-pro
+MODEL_NAME=gemini-2.5-flash
 AGENT_NAME=MangabaAgent
 LOG_LEVEL=INFO
 ```

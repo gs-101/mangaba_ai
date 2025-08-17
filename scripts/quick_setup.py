@@ -256,7 +256,7 @@ class QuickSetup:
                 print("[INFO] Obtenha em: https://makersuite.google.com/app/apikey")
             
             # Outras configurações opcionais
-            model_name = input("🤖 Nome do modelo [gemini-pro]: ").strip() or "gemini-pro"
+            model_name = input("🤖 Nome do modelo [gemini-2.5-flash]: ").strip() or "gemini-2.5-flash"
             agent_name = input("👤 Nome do agente [MangabaAgent]: ").strip() or "MangabaAgent"
             log_level = input("📊 Nível de log [INFO]: ").strip() or "INFO"
             
@@ -267,7 +267,7 @@ class QuickSetup:
             # Substitui valores
             replacements = {
                 'your_google_api_key_here': api_key,
-                'gemini-pro': model_name,
+                'gemini-2.5-flash': model_name,
                 'MangabaAgent': agent_name,
                 'INFO': log_level
             }

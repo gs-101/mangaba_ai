@@ -38,7 +38,7 @@ class TestMangabaAgent:
         """Mock para configuração"""
         with patch('config.config') as mock_cfg:
             mock_cfg.api_key = "test_api_key"
-            mock_cfg.model = "gemini-pro"
+            mock_cfg.model = "gemini-2.5-flash"
             mock_cfg.log_level = "INFO"
             yield mock_cfg
     

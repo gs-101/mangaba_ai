@@ -387,24 +387,51 @@ python scripts/exemplo_curso_basico.py
 python examples/basic_example.py
 ```
 
-## 📚 Documentação
+## 📚 Wiki Avançada e Documentação
 
-- [🎓 CURSO_BASICO.md](docs/CURSO_BASICO.md) - **Curso básico completo para iniciantes**
-- [🔧 SETUP.md](docs/SETUP.md) - Guia completo de configuração
-- [🌐 PROTOCOLS.md](docs/PROTOCOLS.md) - Documentação dos protocolos MCP e A2A
-- [📝 CHANGELOG.md](docs/CHANGELOG.md) - Histórico de mudanças
-- [🚀 SCRIPTS.md](docs/SCRIPTS.md) - Documentação dos scripts de configuração
-- [📁 ESTRUTURA.md](ESTRUTURA.md) - Organização do repositório
+### 🌟 **[📖 WIKI COMPLETA](docs/WIKI.md) - Portal Principal da Documentação**
 
-> 📖 **Toda a documentação está organizada na pasta [docs/](docs/)**
+A **Wiki Avançada** do Mangaba AI oferece documentação abrangente em português brasileiro para todos os níveis:
+
+#### 🎓 **Para Iniciantes**
+- [🚀 Visão Geral do Projeto](docs/WIKI.md#-visão-geral-do-projeto) - O que é e para que serve
+- [🎓 Curso Básico Completo](docs/CURSO_BASICO.md) - Tutorial passo-a-passo  
+- [⚙️ Instalação e Configuração](docs/SETUP.md) - Guia detalhado de setup
+- [❓ FAQ - Perguntas Frequentes](docs/FAQ.md) - Dúvidas comuns e soluções
+
+#### 👨‍💻 **Para Desenvolvedores**
+- [🌐 Protocolos A2A e MCP](docs/PROTOCOLS.md) - Documentação técnica completa
+- [⭐ Melhores Práticas](docs/MELHORES_PRATICAS.md) - Guia de boas práticas
+- [🤝 Como Contribuir](docs/CONTRIBUICAO.md) - Diretrizes de contribuição
+- [📝 Glossário de Termos](docs/GLOSSARIO.md) - Definições técnicas
+
+#### 🛠️ **Recursos Técnicos**
+- [🔧 Scripts e Automação](docs/SCRIPTS.md) - Documentação dos scripts
+- [📊 Histórico de Mudanças](docs/CHANGELOG.md) - Changelog completo
+- [📁 Estrutura do Projeto](ESTRUTURA.md) - Organização do repositório
+
+> 🎯 **Comece pela [Wiki Principal](docs/WIKI.md)** - É seu portal de entrada para toda a documentação!
 
 ## 🤝 Contribuição
 
-1. Fork o projeto
-2. Crie uma branch para sua feature
-3. Commit suas mudanças
-4. Push para a branch
-5. Abra um Pull Request
+Agradecemos seu interesse em contribuir! Consulte nosso **[Guia Completo de Contribuição](docs/CONTRIBUICAO.md)** para informações detalhadas.
+
+### 🚀 **Primeiros Passos**
+1. 📚 Leia as [Diretrizes de Contribuição](docs/CONTRIBUICAO.md)
+2. 🍴 Faça fork do projeto
+3. 🔧 Configure o ambiente de desenvolvimento
+4. ⭐ Siga as [Melhores Práticas](docs/MELHORES_PRATICAS.md)
+5. 🧪 Execute os testes
+6. 📤 Abra um Pull Request
+
+### 💡 **Formas de Contribuir**
+- 🐛 **Correção de bugs**
+- ✨ **Novas funcionalidades**
+- 📚 **Melhoria da documentação**
+- 🧪 **Adição de testes**
+- 🌐 **Tradução para outros idiomas**
+
+> 📖 **Primeira contribuição?** Procure por issues marcadas com `good first issue`!
 
 ## 📄 Licença
 

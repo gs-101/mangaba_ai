@@ -7,6 +7,8 @@
 
 Repositório minimalista para criação de agentes de IA inteligentes e versáteis com protocolos **A2A** (Agent-to-Agent) e **MCP** (Model Context Protocol).
 
+> 📚 **[WIKI AVANÇADA](wiki/README.md)** - Documentação completa em português brasileiro
+
 > 📋 **[ÍNDICE COMPLETO](INDICE.md)** - Navegação rápida por todo o repositório
 
 ## ✨ Características Principais

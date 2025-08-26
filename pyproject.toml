@@ -19,7 +19,15 @@ classifiers = [
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
     "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = [
+  "ai",
+  "artificial intelligence",
+  "chatbot",
+  "gemini",
+  "google",
 ]
 requires-python = ">=3.8"
 dependencies = [

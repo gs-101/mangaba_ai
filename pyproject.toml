@@ -62,8 +62,10 @@ analysis = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/dheiver2/mangaba_ai"
-"Bug Tracker" = "https://github.com/dheiver2/mangaba_ai/issues"
+documentation = "https://mangaba-ai.vercel.app/#documentacao"
+homepage = "https://github.com/dheiver2/mangaba_ai"
+issues = "https://github.com/dheiver2/mangaba_ai/issues"
+repository = "https://github.com/Mangaba-ai/mangaba_ai"
 
 [tool.black]
 line-length = 88

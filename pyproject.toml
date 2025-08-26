@@ -9,10 +9,8 @@ name = "mangaba_ai"
 version = "0.1.0"
 description = "Framework para desenvolvimento de agentes autônomos inteligentes"
 readme = "README.md"
-authors = [
-    {name = "Seu Nome", email = "seu.email@exemplo.com"}
-]
 license = {text = "MIT"}
+authors = [{ name = "Mangaba AI Team", email = "contato@mangaba.ai" }]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",

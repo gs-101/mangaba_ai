@@ -1,3 +1,5 @@
+# Para a documentação das chaves, veja: https://packaging.python.org/en/latest/specifications/declaring-project-metadata
+
 [build-system]
 requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
